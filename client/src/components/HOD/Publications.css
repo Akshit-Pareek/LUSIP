@@ -1,0 +1,197 @@
+/* Publications.css */
+
+/* container */
+.pub-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0 16px;
+  font-family: Arial, sans-serif;
+}
+.pub-container input{
+  padding:8px 5px;
+  border-radius: 5px;
+  border-width: 0.5px;  
+}
+/* form styling */
+.pub-container .pub-form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.pub-container .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.pub-container .form-row label {
+  width: 160px;
+  font-weight: bold;
+}
+.pub-container .form-row input,
+.pub-container .form-row select {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* authors */
+.pub-container .authors-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pub-container .author-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.pub-container .author-row input {
+  flex: 1;
+  padding: 6px 8px;
+}
+
+.pub-container .editors-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pub-container .editor-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.pub-container .editor-row input {
+  flex: 1;
+  padding: 6px 8px;
+}
+
+/* .editors-section {
+  margin-bottom: 1.5rem;
+}
+
+.editor-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+
+.pub-container .remove-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.pub-container .add-btn,.pub-container  .remove-btn {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background: #3c8dbc;
+  color: #fff;
+}
+.pub-container .add-btn{
+  height: 40px;
+}
+.pub-container .remove-btn { width:40px;height:32px; padding: 0;background: #d9534f; }
+.pub-container .remove-btn img {
+  width: 40px;
+  height: 32px;
+  /* margin: 0; */
+}
+.pub-container .add-btn:hover,.pub-container  .remove-btn:hover { opacity: 0.85; }
+
+/* grid layout */
+.pub-container .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px 24px;
+}
+.pub-container .grid-item { display: flex; flex-direction: column; }
+.pub-container .grid-item.full { grid-column: 1 / -1; }
+.pub-container .grid-item label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pub-container .pages-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* grouped venue */
+.pub-container .venue-group {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+.pub-container .venue-group legend {
+  padding: 0 6px;
+  font-weight: bold;
+}
+.pub-container .venue-group .sub-grid {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* submit */
+.pub-container .button-row {
+  text-align: center;
+  margin-top: 32px;
+}
+.pub-container .button-row button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pub-container .button-row button:hover { opacity: 0.9; }
+
+/* cards */
+.pub-container .cards-container {
+  margin-top: 40px;
+  display: grid;
+  gap: 16px;
+}
+.pub-container .pub-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.pub-container .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 12px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: bold;
+}
+.pub-container .card-actions button {
+  margin-left: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #3c8dbc;
+}
+.pub-container .card-actions button:hover {
+  text-decoration: underline;
+}
+.pub-container .card-body {
+  padding: 16px;
+  line-height: 1.5;
+}
+
+.pub-container .required::after{
+  content: "*";
+  color: red;
+}

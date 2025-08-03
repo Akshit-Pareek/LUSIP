@@ -1,0 +1,119 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  width: 100dvw;
+  height: 10dvh;
+  position: fixed;
+  text-align: center;
+  display: flex;
+  font-size: large;
+  background-color: rgb(205, 233, 255);
+  color: rgb(0, 30, 150);
+}
+
+.login-container .logo {
+  width: 150px;
+  height: 80px;
+  margin: 0 0 20px 100px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-container .form-ele {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+
+.login-container .form-ele label {
+  margin: 0 10px;
+}
+
+.login-container .login-form {
+  background-color: white;
+  padding: 30px;
+  width: 320px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.login-container .login-form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+.login-container .login-form input {
+  width: 50%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container .submit-btn {
+  margin-top: 15px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container .forgot-password-btn {
+  /* margin-top: 20px; */
+  width: 100%;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container .form-ele label:after {
+  content: "*";
+  color: red;
+}
+
+.login-container .submit-btn:hover {
+  background-color: rgb(10, 151, 10);
+}
+
+.login-container .forgot-password-btn:hover {
+  background-color: #084786;
+}
+
+@media screen and (max-width: 500px) {
+  .login-form {
+    width: 75%;
+  }
+}

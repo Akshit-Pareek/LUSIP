@@ -1,0 +1,74 @@
+.curriculum-cif {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.curriculum-cif .toggle-buttons {
+  margin-bottom: 20px;
+  
+}
+
+.curriculum-cif .toggle-buttons button {
+  padding: 15px 40px;
+  margin-right: 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.curriculum-cif  .dept{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    width:25%;
+}
+
+.curriculum-cif .dept>*{
+    width:100%;
+}
+
+.curriculum-cif select{
+    padding: 2px;
+    font-size: medium;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.curriculum-cif .toggle-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.curriculum-cif .program-row button,
+.curriculum-cif .program-row input[type="file"] {
+  margin-left: 10px;
+}
+
+.curriculum-cif label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.curriculum-cif .cif-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.curriculum-cif .cif-table th,
+.curriculum-cif .cif-table td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.curriculum-cif .cif-table{
+  background-color: rgb(255, 255, 255);
+}

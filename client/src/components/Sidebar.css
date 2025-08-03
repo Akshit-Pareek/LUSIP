@@ -1,0 +1,107 @@
+/* Sidebar.css */
+
+/* .sidebar {
+    width:18vw;
+    z-index: 100000;
+    background-color: #333;
+    color: white;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position :static
+  } */
+   .layout-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    width: 20vw;
+    background-color: #333;
+    color: white;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    margin-left: 19.4vw;
+    width: 80vw;
+    min-height: 90vh;
+    display: flex;
+    padding:0;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hod-navbar {
+    width: 100%;
+    /* position: sticky; */
+    top: 0;
+    z-index: 900;
+    padding-left: 0;
+}
+
+.hod-form-content {
+    flex: 1;
+    padding: 32px 24px 24px 24px;
+    background: #f9f9f9;
+    min-height: 0;
+    overflow: auto;
+}
+  .sidebar .head{
+    font-size: larger;
+    margin:20px 0 15px 15px;
+    font-weight: 600;
+    color: #2eaddb;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    flex-grow: 1;
+    
+  }
+  .sidebar ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .sidebar ul li:hover {
+    background-color: #444;
+  }
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #00bfff;
+  }
+  
+  .sidebar .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .sidebar .toggle-btn:focus {
+    outline: none;
+  }
+  

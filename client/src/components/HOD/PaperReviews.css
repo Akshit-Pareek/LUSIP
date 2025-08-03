@@ -1,0 +1,61 @@
+.paper-reviews-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paper-reviews-form h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.paper-reviews-form .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.paper-reviews-form .form-row label {
+    flex: 1;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.paper-reviews-form input[type="text"],
+.paper-reviews-form input[type="number"],
+.paper-reviews-form select {
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.paper-reviews-form button {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.paper-reviews-form button:hover {
+    background-color: #1b5e20;
+}
+
+.paper-reviews-form .name-group {
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+}

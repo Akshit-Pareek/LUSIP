@@ -1,0 +1,75 @@
+.faculty-form {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.faculty-form h2,.faculty-form h3 {
+  margin-bottom: 35px;
+}
+
+.faculty-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.faculty-form .form-row label {
+  flex: 1;
+  margin-right: 10px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.faculty-form .form-row input,
+.faculty-form .form-row select {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.faculty-form .parent{
+  padding: 20px;
+}
+.faculty-form .parent h2{
+  font-weight: 500;
+}
+
+.faculty-form .form-subgroup {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  
+}
+
+.faculty-form .add-btn,
+.faculty-form .submit-btn {
+  margin: 0 20px;
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.faculty-form .add-btn:hover,
+.submit-btn:hover {
+  background-color: #005a9e;
+}
+
+.faculty-form .parent{
+  background-color: aliceblue;
+  margin-bottom: 5%;
+  
+}
+
+.faculty-form .required::after{
+  content: "*";
+  color: red;
+}
